@@ -9,6 +9,12 @@ import (
 	"io/ioutil"
 )
 
+/*
+  Practice using the encryption methods denoted in the crypto/cipher package.
+  All of the code here is just minor modifications of the examples found on the
+  goDoc page for that package. https://golang.org/pkg/crypto/cipher
+*/
+
 func encryptCBC(key []byte, message []byte) []byte {
 
 	if len(message)%aes.BlockSize != 0 {
